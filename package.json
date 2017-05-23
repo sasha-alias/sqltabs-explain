@@ -1,0 +1,26 @@
+{
+  "name": "sqltabs-explain",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src",
+    "build:watch": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src --watch",
+    "start": "node server.js"
+  },
+  "author": "Sasha Aliashkevich",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "d3": "^3.5.17",
+    "express": "^4.15.3",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "sqldoc": "^0.8.2",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  }
+}

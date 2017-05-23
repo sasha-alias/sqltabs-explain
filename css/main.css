@@ -1,0 +1,126 @@
+#root{
+    margin: 10px;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.header{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header img{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: thin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.plan-input-text{
+    font-size: medium;
+    width: 100%;
+    background-color: #323232;
+    color: #c8c8c5;
+    margin-bottom: 5px;
+}
+
+.table-resultset {
+    width: auto;
+}
+
+table {
+    background-color: #323232;
+    font-size: inherit;
+    margin: 10px;
+}
+
+.table-resultset td {
+    white-space: pre-wrap;
+}
+
+/* explain plan */
+.explain-plan-toolbar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.explain-plan-header-title{
+}
+
+.explain-plan-node-title{
+}
+
+.explain-plan-node-arrow{
+    cursor: pointer;
+}
+
+.explain-plan-node-arrow-hidden{
+    font-size: 0;
+    color: rgba(0,0,0,0);
+}
+
+.explain-plan-node-skipped-note{
+    font-size: 0;
+    color: rgba(0,0,0,0);
+}
+
+.explain-plan-details{
+    font-family: monospace;
+}
+
+.explain-plan-rownum-switch{
+    cursor: pointer;
+}
+
+.explain-plan-view-switcher{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.explain-plan-mount-div{
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+    border: solid 1px;
+}
+
+.explain-plan-tree-circle{
+    stroke: aliceblue;
+    fill: yellowgreen;
+}
+
+.explain-plan-tree-circle-never-executed{
+    fill: rgba(51, 122, 183, 1);
+}
+
+.explain-plan-tree-node-text{
+    fill: aliceblue;
+}
+
+.explain-plan-tree-link{
+    stroke: aliceblue;
+}
+
+.explain-plan-cte-link{
+    stroke: #f89406;
+}
+
+
+/* SVG */
+
+path.link{
+    fill: none;
+}
+
+/* */
+
