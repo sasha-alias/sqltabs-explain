@@ -1,3 +1,7 @@
+body{
+    font-size: small;
+}
+
 #root{
     margin: 10px;
 }
@@ -7,8 +11,8 @@
     width: 40px;
 }
 .header{
+    font-size: medium;
     font-weight: bold;
-    font-size: large;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -18,6 +22,7 @@
 }
 
 .footer {
+    font-size: x-small;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -28,7 +33,6 @@
 }
 
 .plan-input-text{
-    font-size: medium;
     width: 100%;
     background-color: #323232;
     color: #c8c8c5;
@@ -54,6 +58,11 @@ table {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.explain-plan-cte-record{
+    color: #da8814;
+}
+
 .explain-plan-header-title{
 }
 

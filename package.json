@@ -11,16 +11,15 @@
   },
   "author": "Sasha Aliashkevich",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "bootstrap": "^3.3.7",
     "d3": "^3.5.17",
     "express": "^4.15.3",
     "react": "^0.14.9",
     "react-dom": "^0.14.9",
-    "sqldoc": "^0.8.2",
-    "babel-cli": "^6.24.1",
-    "babel-plugin-transform-react-jsx": "^6.24.1"
+    "sqldoc": "^0.8.3"
   }
 }
