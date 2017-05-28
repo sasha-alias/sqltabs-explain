@@ -3,7 +3,10 @@ var example = "Nested Loop  (cost=1.15..2.69 rows=1 width=345)\n" + "  ->  Hash 
 var App = React.createClass({
 
     getInitialState: function () {
-        return { "plantext": "" };
+        return {
+            "plantext": "",
+            "analytics": true
+        };
     },
 
     changeHandler: function (event) {
@@ -31,6 +34,16 @@ var App = React.createClass({
         } else {
             pgplan = null;
         }
+
+        if (this.state.analytics) {
+            console.log("analytics is on");
+            var analytics_text = "<script>\n" + "  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n" + "  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n" + "  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n" + "  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\n" + "\n" + "  ga('create', 'UA-100017043-1', 'auto');\n" + "  ga('send', 'pageview');\n" + "\n" + "</script>";
+            var analytics = React.createElement("div", { dangerouslySetInnerHTML: { __html: analytics_text } });
+        } else {
+            console.log("analytics is off");
+            var analytics = null;
+        }
+
         return React.createElement(
             "div",
             null,
@@ -76,7 +89,8 @@ var App = React.createClass({
                         " MIT License "
                     )
                 )
-            )
+            ),
+            analytics
         );
     }
 });
