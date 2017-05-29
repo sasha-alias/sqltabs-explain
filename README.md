@@ -6,7 +6,9 @@ Explain plan visualisation for Postgresql
 
 ![screenshot 2](https://raw.githubusercontent.com/sasha-alias/sqltabs-explain/master/img/plain_plan.png)
 
-Hosted version is located at [exlain.sqltabs.com](http://explain.sqltabs.com)o
+![screenshot 3](https://raw.githubusercontent.com/sasha-alias/sqltabs-explain/master/img/plan_record.png)
+
+Hosted version is located at [exlain.sqltabs.com](http://explain.sqltabs.com)
 
 Installation with npm:
 
