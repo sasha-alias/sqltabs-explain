@@ -9,7 +9,7 @@
     "build": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src",
     "build:watch": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src --watch",
     "start": "node server.js",
-    "predeploy" : "npm run build",
+    "predeploy" : "npm install",
     "deploy" : "gh-pages -d build"
   },
   "author": "Sasha Aliashkevich",
