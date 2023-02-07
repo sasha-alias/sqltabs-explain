@@ -6,12 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src",
+    "build": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src",
     "build:watch": "./node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx --out-dir=build src --watch",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "Sasha Aliashkevich",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
